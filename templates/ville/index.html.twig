@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello jolie ville!
+{% endblock %}
+
+{% block body %}
+
+	<h1>Bienvenue dans la belle ville de
+		{{ ville }}
+	</h1>
+	<hr>
+	<h2>Nombre d'habitants :
+		{{habitants}}
+		hab.</h2>
+	Type :
+
+	{% if (habitants<1000) %}
+		Village
+	{% elseif (habitants>=1000 and habitants<=10000) %}
+		Petite ville
+	{% elseif (habitants>10000) %}
+		Grande ville
+	{% endif %}
+
+{% endblock %}
