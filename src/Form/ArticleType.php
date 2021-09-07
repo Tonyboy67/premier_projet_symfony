@@ -16,17 +16,15 @@ class ArticleType extends AbstractType
     {
         $builder
             ->add('titre', TextType::class, [
-                'label'=>'Titre de l\'article',
-                'attr'=> [
-                    'placeholder'=>'Tapez le titre ici...'
+                "label" => "Titre de l'article", 
+                "attr" => [
+                    "placeholder" => "Taper le titre ici"
                 ]
             ])
-            ->add('contenu', TextareaType::class, [
-                'label'=>'Contenu de l\(article'
+            ->add('contenu',TextareaType::class, [
+                "label" => "Contenu de l'article"
             ])
-            ->add('createdAt', DateType::class, [
-                'label'=>'Date de publication'
-            ])
+           
         ;
     }
 
@@ -37,3 +35,4 @@ class ArticleType extends AbstractType
         ]);
     }
 }
+

@@ -1,41 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!
-{% endblock %}
+{% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-	<h1>
-		Hello
-		{{prenom}}
-		!!!
 
-	</h1>
-	<h3>
-		Recommendation :
-		{{julius}}
-	</h3>
-	<h4>
-		Mon âge est :
-		{{age}}
-		ans
-	</h4>
+    <h1>Page d'accueil</h1>
+    
 
-	{% if age >=18%}
-		<p>Je suis bien MAJEUR !!!</p>
-	{% else %}
-		<p>Je suis mineur :-(</p>
-	{% endif %}
+{% endblock %}
 
-	{% for item in pokemons %}
-		Je suis le pokemon
-		{{item | upper}}
-		<br/>
-	{% endfor %}
-
-	<h1>Je suis Narouto du village
-		{{ninja.village}}<h1>
-			<h2>Mon renard est :
-				{{ninja.renard}}</h2>
-
-		</div>
-	{% endblock %}
